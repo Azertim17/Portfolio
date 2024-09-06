@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/page2.css"> <!-- CSS spécifique à la page 1 -->
+    <title>Tim Mazzolini</title>
+</head>
+<body>
+    <header>
+        <!-- Barre d'outils -->
+        <div class="toolbar">
+            <img src="../images/vscode.svg" width="16px" height="16px" style="margin-right: 10px; margin-top: 3px;" />
+            <!-- Boutons de la barre d'outils -->
+            <button>File</button>
+            <button>Edit</button>
+            <button>Selection</button>
+            <button>View</button>
+            <button>Go</button>
+            <button>Run</button>
+            <button>Terminal</button>
+            <button>Help</button>
+        </div>
+    </header>
+
+
+
+    <div class="container-left">
+        <aside class="sidebar" id="menu-bar">
+            <!-- Menu de gauche -->
+            <nav>
+                <ul>
+                    <li><img src="../images/files.svg"/></li>
+                    <li><img src="../images/search.svg" /></li>
+                    <li><img src="../images/fork.svg" /></li>
+                    <li><img src="../images/play.svg" /></li>
+                    <li><img src="../images/extension.svg"/></li>
+                </ul>
+            </nav>
+        </aside>
+    
+        <aside class="sidebar" id="workspace-bar">
+            <!-- Menu de gauche -->
+            <nav>
+                <div id="top-workspace">EXPLORER</div>
+                <div id="name-workspace"><img src="../images/fleche_bas.svg"/>Portfolio</div>
+
+                <ul><img src="../images/fleche_bas.svg"/>Documents
+                    <li class="clikable"><a href="../Documents/cv.pdf" target="_blank"><img src="../images/pdf.svg"/>cv.pdf</a></li>
+                </ul>
+                <ul><img src="../images/fleche_bas.svg"/>html
+                    <li class="clikable" id="page1-link"><img src="../images/html.svg"/>index.html</li>
+                    <li class="clikable" id="page2-link"><img src="../images/html.svg"/>presentation.html</a></li>
+                </ul>
+                <ul><img src="../images/fleche_droite.svg"/> images
+                </ul>
+                <ul><img src="../images/fleche_droite.svg"/> java
+                </ul>
+                <ul><img src="../images/fleche_bas.svg"/>styles
+                    <li><img src="../images/hashtag.svg"/>index.css</li>
+                    <li><img src="../images/hashtag.svg"/>presentation.css</li>
+                </ul>
+
+            </nav>
+        </aside>
+    </div>
+
+
+
+
+    <div class="container">
+        <main class="workspace">
+
+            <aside class="sidebar" id="line-numbers">
+                <!-- Menu de gauche -->
+                <nav>
+                    <ul id="number-list">
+                        <!-- Numéros générés JAVA -->
+                    </ul>
+                </nav>
+            </aside>
+
+            <!-- Espace de travail -

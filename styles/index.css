@@ -1,0 +1,284 @@
+/* Réinitialisation des marges et des rembourrages */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #adadad;
+}
+
+html{
+    background-color: #1f1f1f;
+}
+
+
+/* Styles pour l'en-tête */
+header {
+    position: fixed;
+    height: 35px;
+    width: 100%;
+    z-index: 1;
+    background-color: #181818;
+    padding: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    border-bottom: 1px solid #515151;
+    
+}
+
+/* Styles pour la barre d'outils */
+.toolbar {
+    display: flex;
+    gap: 4px;
+    height: 4vh;
+    text-align: center;
+
+    button {
+        background-color: #181818;
+        border: none; 
+        border-radius: 5px;
+        display: flex; 
+        align-items: center; 
+        transition: background-color 0.1s;
+        width: fit-content;
+        padding: 5px 2px 5px 2px;
+        margin-left: 5px;
+        height: 20px;
+        font-size: 11px;
+    }
+    
+    
+    button:hover {
+        background-color: #555;
+        border-radius: 5px;
+        padding: 5px 2px 5px 2px;
+    }
+    
+    
+}
+
+.container {
+    display: flex;
+    padding-top: 4vh;
+    float: right;
+    height: 1000px;
+    width: calc(100% - 250px);
+}
+
+
+.container-left{
+    position: fixed;
+    z-index: 0;
+    margin-top: 35px;
+    height: calc(100vh - 35px);
+    float: left;
+}
+
+
+.sidebar {
+    width: 250px;
+    background-color: #181818;
+    height: 96.5vh;
+    overflow-y: auto;
+    padding: 10px 0 0 15px;
+}
+
+
+#menu-bar{
+    background-color: #181818;
+    border-right: 1px solid #515151;
+    border-bottom: 1px solid #515151;
+    width: 45px;
+    float: left;
+    padding: 15px 35px 0px 10px;
+
+    nav{
+        ul{
+            list-style-type: none;    
+            li{
+                padding-bottom: 20px;
+                cursor: pointer;
+            }
+        }   
+    }
+
+    img{
+        width: 25px;
+        height: 25px;
+    }
+}
+
+
+#workspace-bar {
+    padding: 10px 20px 0 15px;
+    width: 200px;
+    float: left;
+    
+    border-right: 1px solid #515151;
+    border-bottom: 1px solid #515151;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+
+    nav {
+        ul {
+            width: 100%;
+            list-style-type: none;
+            padding: 2px 0 2px 15px;
+
+            li {
+                width: 100%;
+                display: flex;
+                align-items: center; 
+                cursor: pointer;
+                padding: 3px 0 0px 15px;
+                img {
+                    width: 22px;
+                    height: 22px;
+                    margin: 0;
+                    padding-bottom: 5px;
+                    vertical-align: middle;
+                }
+                a {
+                    width: 100%;
+                    text-decoration: none;
+                    display: block;
+                }
+            }
+
+            .clikable:hover{
+                background-color: #515151;
+            }
+        }
+    }
+    img {
+        padding: 4px 6px 0 0 ;
+        width: 15px;
+        height: 15px;
+    }
+}
+
+
+#top-workspace{
+    font-size: 11px;
+    margin: 3px 0 15px 15px;
+}
+
+
+#name-workspace{
+    margin-bottom: 2px;
+    img {
+        padding: 4px 6px 0 0 ;
+        width: 15px;
+        height: 15px;
+    }
+    
+}
+
+
+
+/* Styles pour l'espace de travail */
+.workspace{
+    display: flex;
+    width: 100%;
+    height: 96vh;
+
+    z-index: 0;
+
+}
+
+#line-numbers {
+    background-color: #1f1f1f;
+    color: #6e7681;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: 20px;
+    padding-left: 15px;
+    width: fit-content;
+    
+    line-height: 1.5;
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+    nav{
+        ul{
+            list-style-type: none;    
+            li{
+                cursor: pointer;
+            }
+        }   
+    }
+}
+
+/* Styles pour l'éditeur de code */
+.editor {
+    background-color: #1f1f1f;
+    color: white;
+    font-family: monospace;
+    overflow: auto;
+    width: 98%;
+    font-size: 15px;
+    padding-top: 20px;
+
+    overflow-y: hidden;
+    line-height: 1.498;
+
+    pre{
+        padding-left: 0;
+        margin: 0;
+    }
+
+}
+
+
+
+
+
+
+
+
+#footer{
+    position: fixed;
+    bottom: 0;
+    background-color: #181818;
+    border-top: 1px solid #515151;    
+    height: 20px;
+    width: 100%;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
